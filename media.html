@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Media-Cover</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            overflow: scroll;
+        }
+        .list{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            min-width: 200px;
+            min-height: 300px;
+            max-width: 200px;
+            background-color: aquamarine;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(76, 81, 21, 0.599);
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .img1{
+            background-image: url(https://as2.ftcdn.net/jpg/00/42/96/99/1000_F_42969981_XzIQtm5oqFjf3wyvVYIIPdjub1UEEM3c.jpg);
+            background-size: cover;
+            button: .;
+        }
+        .img2{
+            background-image: url(https://static.gujaratsamachar.com/content_image/content_image_adc52e4b-b82a-421c-afb5-9a84b002a109.jpeg);
+            background-size: cover;
+        }
+        .img3{
+            background-image: url(https://static.scientificamerican.com/sciam/cache/file/642B68EB-E034-456C-AE81B2D92440BB27_source.jpg?w=1200);
+            background-size: cover;
+        }
+        .img4{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSth9GFOojZ7gIcb3lohJ1fEYr4NUtIWlYulw&s);
+            background-size: cover;
+        }
+        .heading{
+            margin-top: 5px;
+            font-size: 40px;
+            color: aliceblue;
+            text-shadow: 0 0 10px rgb(40, 34, 34);
+        }
+        .btn{
+            margin-top: 190px;
+            font-size: 15px;
+            border-radius: 25px;
+            padding: 8px;
+            /* border: 2px solid black; */
+            background-color: rgb(25, 231, 25);
+            cursor: pointer;
+            box-shadow: 0 0 20px rgb(186, 186, 160);
+            color: white;
+        }
+        .btn:hover{
+            font-size: 18px;
+            box-shadow: 0 0 30px rgb(179, 179, 89);
+            border-bottom: 1px solid black;
+        }
+        h1{
+            position: fixed;
+            top: 10px;
+            font-size: 50px;
+            text-shadow: 0 0 20px gray;
+            color: beige;
+        }
+        @media(max-width:1100px){
+            .list{
+                /* flex-direction: column; */
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 >Seasons</h1>
+        <div class="list">
+            <div class="box img1">
+                <p class="heading">Summer</p>
+                <button class="btn">Know More &gt;</i></button>
+            </div>
+            <div class="box img2">
+                <p class="heading">Rainy</p>
+                <button class="btn">Know More &gt;</i></button>
+            </div>
+            <div class="box img3">
+                <p class="heading">Spring</p>
+                <button class="btn">Know More &gt;</i></button>
+            </div>
+            <div class="box img4">
+                <p class="heading">Winter</p>
+                <button class="btn">Know More &gt;</i></button>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
