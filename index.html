@@ -14,27 +14,29 @@
         .container{
             height: 100vh;
             width: 100vw;
-            background-color: background: #0f0c29;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-color:background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
 
             padding: 10px;
             display: flex;
             flex-direction: column;
-            /* justify-content: center; */
+            /* justify-content: space-evenly; */
             align-items: center;
             overflow: scroll;
         }
         .list{
+            
             margin-top: 100px;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
         }
         .box{
-            min-width: 200px;
-            min-height: 300px;
-            max-width: 200px;
+            width: 200px;
+            height: 300px;
+            max-height: 300px;
             background-color: aquamarine;
             margin: 10px;
             border-radius: 10px;
@@ -47,7 +49,6 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
         .img1{
             background-image: url(https://as2.ftcdn.net/jpg/00/42/96/99/1000_F_42969981_XzIQtm5oqFjf3wyvVYIIPdjub1UEEM3c.jpg);
             background-size: cover;
-            button: .;
         }
         .img2{
             background-image: url(https://static.gujaratsamachar.com/content_image/content_image_adc52e4b-b82a-421c-afb5-9a84b002a109.jpeg);
@@ -68,7 +69,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
             text-shadow: 0 0 10px rgb(40, 34, 34);
         }
         .btn{
-            margin-top: 190px;
+            margin-top: 150px;
             font-size: 15px;
             border-radius: 25px;
             padding: 8px;
@@ -83,7 +84,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
             box-shadow: 0 0 30px rgb(179, 179, 89);
             border-bottom: 1px solid black;
         }
-        h1{
+        .h12{
             position: fixed;
             top: 10px;
             font-size: 50px;
@@ -92,16 +93,31 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
         }
         @media(max-width:1100px){
             .list{
-                /* flex-direction: column; */
-                flex-wrap: wrap;
+                flex-direction: column;
+                /* flex-wrap: wrap; */
                 align-items: center;
+            }
+        }
+        @media(max-width:700px){
+            .list{
+                flex-direction: row;
+            }
+            .box{
+                width: 150px;
+                height: 250px;
+            }
+            .heading{
+                font-size: 30px;
+            }
+            .btn{
+                padding: 5px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 >Seasons</h1>
+        <h1 class="h12">Seasons</h1>
         <div class="list">
             <div class="box img1">
                 <p class="heading">Summer</p>
